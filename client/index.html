@@ -5,16 +5,23 @@
         
         <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+        <link rel="stylesheet" href="styles/styles.css" />
     </head>
     <body class='container'>
-        <div class='row'>
-            <h1 class='well'>Test page <span class='small'>It's only for show</span></h1>
-            <p>There is some content here</p>
-            <p>Styling by bootstrap</p>
+        <div class='row' id='map'>
+
+        </div>
+        <div>
+            Map clicked: <span data-bind='text: location'></span>
+        </div>
+        <div>
+            Heading: <span data-bind='text: heading'></span>&deg;
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
         <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js"></script>
+        <script src="scripts/app.js"></script>
     </body>
 </html>
